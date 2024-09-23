@@ -1,52 +1,127 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-main{
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background:linear-gradient(#033747,#012733);
-    background-size:cover ;
-    font-family: 'Courier New', Courier, monospace;
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
-.navbar{
-    width: 95%;
-    height: auto;
-    margin-left: 30px;
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.logo{
-    color: #012733;
-    font-size: 40px;
-    font-family: cursive;
-    float: left;
-    padding-top: .6%;
-    cursor: pointer;
-}
-.menu{
-    width: 600px;
-    float: left;
-    height: 70px;
-}
-ul{
-    float: left;
+
+.navbar {
     display: flex;
-    padding-top: 30px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left:14% ;
 }
-ul li{
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+nav ul {
     list-style: none;
-    margin-left: 60px;
-    font-size: 16px;
+    display: flex;
 }
-ul li a{
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: aqua;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
     font-weight: bold;
 }
-ul li a:hover{
-    color: #ff7200;
+
+.donate-btn {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.signup {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.signup form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.signup input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.signup button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
 }

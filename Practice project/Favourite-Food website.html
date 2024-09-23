@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Foods</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Favorite Foods</h1>
+    </header>
+
+    <section class="favorite-foods">
+        <h2>Ordered List of Favorite Foods</h2>
+        <ol>
+            <li>Pizza
+                <ul>
+                    <li>Cheese</li>
+                    <li>Tomato Sauce</li>
+                    <li>Olives</li>
+                    <li>Pepperoni</li>
+                </ul>
+            </li>
+            <li>Burger
+                <ul>
+                    <li>Bun</li>
+                    <li>Beef Patty</li>
+                    <li>Cheese</li>
+                    <li>Lettuce</li>
+                    <li>Tomato</li>
+                </ul>
+            </li>
+            <li>Pasta
+                <ul>
+                    <li>Pasta Noodles</li>
+                    <li>Garlic</li>
+                    <li>Olive Oil</li>
+                    <li>Parmesan Cheese</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="food-form">
+        <h2>Submit Your Favorite Food</h2>
+        <form action="#">
+            <label for="food">Favorite Food:</label>
+            <input type="text" id="food" name="food" placeholder="Enter food name" required><br>
+
+            <label for="ingredients">Ingredients (comma-separated):</label>
+            <input type="text" id="ingredients" name="ingredients" placeholder="Enter ingredients" required><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>
