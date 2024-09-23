@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Art School</title>
-        <link rel="stylesheet" href="style3.css" />
+        <link rel="stylesheet" href="Nicepage.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,7 +15,7 @@
     <body>
         <header>
             <div class="image">
-                <img class="pic" src="img1.jpeg" alt="Art school" />
+                <img class="pic" src="./Artschool.jpg" alt="Art school" />
                 <p class="heading">ART</p>
                 <p class="text1">SCHOOL</p>
             </div>
@@ -99,7 +99,7 @@
 
             <section class="third">
                 <div class="left">
-                    <img class="books" src="img2.jpeg" alt="Books" />
+                    <img class="books" src="./books.jpg" alt="Books" />
                 </div>
                 <div class="right">
                     <p class="head_1">We'd love to hear from you</p>
@@ -126,14 +126,113 @@
                     </p>
                 </div>
                 <div class="images">
-                        <img src="img3.jpeg" alt="" class="picture">
-                        <img src="img4.jpeg" alt="" class="picture">
-                        <img src="img5.jpeg" alt="" class="picture">
-                        <img src="img6.jpeg" alt="" class="picture">
-                        <img src="img4.jpeg" alt="" class="picture">
-                        <img src="img8.jpeg" alt="" class="picture">
-                </div>
+                        <img src="./gallery.jpg" alt="" class="picture">
+                        <img src="./gallery1.jpg" alt="" class="picture">
+                        <img src="./gallery2.jpg" alt="" class="picture">
+                        <img src="./gallery3.jpg" alt="" class="picture">
+                        <img src="./gallery4.jpg" alt="" class="picture">
+                        <img src="./gallery5.jpg" alt="" class="picture">
+                </div>   
             </section>
-        </main>
-    </body>
+
+           <!-- <section class="count">
+            <div class="countbox" id="count1">
+                <h2>5K</h2>
+                <p class="tag">students</p>
+            </div>
+            <div class="countbox" id="count1">
+                <h2>150</h2>
+                <p class="tag">teachers</p>
+            </div>
+            <div class="countbox" id="count1">
+                <h2>45</h2>
+                <p class="tag">winner</p>
+            </div>
+            <div class="countbox" id="count1">
+                <h2>250</h2>
+                <p class="tag">awards</p>
+            </div>
+        </section> -->
+
+
+        <section class="count">
+            <div class="countbox" data-target="5000">
+                <h2>0</h2>
+                <p class="tag">students</p>
+            </div>
+            <div class="countbox" data-target="150">
+                <h2>0</h2>
+                <p class="tag">teachers</p>
+            </div>
+            <div class="countbox" data-target="45">
+                <h2>0</h2>
+                <p class="tag">winner</p>
+            </div>
+            <div class="countbox" data-target="250">
+                <h2>0</h2>
+                <p class="tag">awards</p>
+            </div>
+        </section>
+        
+
+        <section class="fifth">
+            <div class="imgCon"><img src="./image1.jpg" alt="img1"></div>
+            <div class="imgCon"><img src="./image2.jpg" alt="img1"></div>
+            <div class="imgCon"><img src="./image3.jpeg" alt="img1"></div>
+        </section>
+
+
+        <section class="last">
+            <div class="lastRight">
+                <h2 class="last1">Questions?
+                    Comments?
+                    We'd love to hear from you.</h2>
+                <p class="last2">The school is open 10:00am to 5:00pm Tuesday to Friday and 10:00am to 3:00pm on
+                    Saturday. During July and August Summer Camps, we're open from Monday to Friday 8:30am to 4:30pm.
+                </p>
+                <p class="thirdlast">
+                    Our mailing address is:
+                    152A Charlotte Street,
+                    Peterborough ON
+                    Phone: 705-742-3221
+                </p>
+            </div>
+
+            <div class="lastLeft">
+                <input class="in" type="text" placeholder="Enter Your Name">
+                <input class="in" type="text" placeholder="Enter Your Email address">
+                <input class="in" type="text" placeholder="Enter Your Message">
+                <button id="subBtn">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ftr">Website Templates created with Website Builder Software.</footer>
+
+
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.countbox');
+        
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const element = counter.querySelector('h2');
+            let count = 0;
+            
+            const updateCounter = () => {
+                const increment = target / 200; // Adjust the divisor for speed
+                if (count < target) {
+                    count = Math.min(count + increment, target);
+                    element.textContent = Math.floor(count);
+                    setTimeout(updateCounter, 10); // Adjust the timeout for speed
+                } else {
+                    element.textContent = target;
+                }
+            };
+            
+            updateCounter();
+        });
+    });
+    </script>
+</body>
+
 </html>
